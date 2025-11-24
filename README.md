@@ -1,7 +1,7 @@
-# Trustworthy Evaluation of Generative AI Models
+# Statistical Inference for Generative Model Comparison
 
 
-This repository contains the implementation of the paper: **[Trustworthy Evaluation of Generative AI Models](https://arxiv.org/pdf/2501.18897).**
+This repository contains the code to reproduce the experiments in the paper: **[Statistical Inference for Generative Model Comparison](https://arxiv.org/pdf/2501.18897).**
 
 ## Overview
 

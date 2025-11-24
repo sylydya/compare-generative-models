@@ -12,8 +12,9 @@ from tqdm import tqdm
 def compute_log_likelihood(model, tokenizer, prompt: str, target: str):
 
     input_text = prompt + target
-    input_ids = tokenizer.encode(input_text, return_tensors="pt").to(model.device)
-    prompt_ids = tokenizer.encode(prompt, return_tensors="pt").to(model.device)
+    input_ids = tokenizer.encode(input_text, return_tensors="pt", add_special_tokens=False).to(model.device)
+    prompt_ids = tokenizer.encode(prompt, return_tensors="pt", add_special_tokens=False).to(model.device)
+
 
     with torch.no_grad():
         outputs = model(input_ids)
